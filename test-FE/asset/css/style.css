@@ -695,7 +695,7 @@ hr.line {
 
 .payment {
     display: flex;
-    ustify-content: end;
+    justify-content: end;
 }
 
 .payment-method a {
