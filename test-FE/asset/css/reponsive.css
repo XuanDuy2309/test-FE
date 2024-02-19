@@ -6,6 +6,15 @@
     .sm-gutter {
         margin: 0;
     }
+    .product-item {
+        flex: 0 0 49%;
+        max-width:49% !important;
+        margin-bottom: 16px;
+    }
+
+    .product-center-item {
+        max-width: 96% !important;
+    }
 }
 
 /* mobile-tablet */
@@ -32,6 +41,13 @@
     .product-img {
         height: 400px;
     }
+
+    .product-item {
+        flex: 0 0 49%;
+        max-width:49% !important;
+        margin-bottom: 16px;
+    }
+
 }
 
 /* Mobile */

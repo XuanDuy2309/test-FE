@@ -466,11 +466,21 @@ select {
     margin-top: 32px;
 }
 
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .product-item {
     background-color: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+/* .product-item:nth-child(2n+1){
+    margin-left: 8px;
+    margin-bottom: 8px;
+} */
 
 .product-img {
     width: 100%;
@@ -559,14 +569,18 @@ select {
     margin-bottom: 16px;
 }
 
-
+.product-center-container{
+    display: flex;
+    justify-content: center;
+}
 
 .product-center-item {
     padding: 24px 0px;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    height: 100%;
+    height: 98%;
+    border: 1px solid var(--text--link);
 }
 
 .center-img {
@@ -645,9 +659,9 @@ hr.up {
     width: 200px;
     height: 50px;
     padding-left: 24px;
-    border: none;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
 }
 
 .letter-input button {
