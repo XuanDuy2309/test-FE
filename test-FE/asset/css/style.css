@@ -93,8 +93,20 @@ select {
     margin-top: 32px;
 }
 
+.ml-8 {
+    margin-left: 8px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
 .p-0{
     padding: 0;
+}
+
+.h-100 {
+    height: 100% !important;
 }
 
 .line-through {
@@ -112,14 +124,11 @@ select {
 .top-links {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    max-width: 1410px;
     height: 14px;
     margin: 0px auto;
-    padding: 16px 0;
+    padding: 16px 30px;
     align-items: center;
-}
-
-.notification {
 }
 
 .notification a {
@@ -129,7 +138,7 @@ select {
 
 .top-right-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .text {
@@ -151,12 +160,12 @@ select {
 }
 
 .header-mid-content {
-    width: 80%;
+    max-width: 1410px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px 30px;
 }
 
 .logo {
@@ -212,9 +221,13 @@ select {
     flex-wrap: wrap;
 }
 
-.login-icon {
+.login-icon,.wishlist-icon,.cart-icon {
     width: 23px;
     height: 23px;
+}
+
+.login-icon img,.wishlist-icon img,.cart-icon img {
+    width: 100%;
 }
 
 .login-icon > i,.wishlist-icon > i,.cart-icon > i {
@@ -222,9 +235,9 @@ select {
 }
 
 .quantity{
-    top: -16px;
+    top: -32px;
     position: relative;
-    left: -12px;
+    left: 14px;
     font-size: 12px;
     color: white;
     background-color: #dd3840;
@@ -243,10 +256,10 @@ select {
 
 .subnav {
     display: flex;
-    width: 80%;
+    max-width: 1410px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 16px 30px;
 }
 
 .categories {
@@ -288,9 +301,9 @@ select {
 }
 
 .content {
-    width: 80%;
+    max-width: 1410px;
     margin: 0 auto;
-    padding: 16px 0 32px 0;
+    padding: 16px 30px 32px;
 }
 
 .content-top {
@@ -299,8 +312,9 @@ select {
 }
 
 .category {
-    width: 270px;
-    height: 490px;
+    /* width: 270px;
+    height: 490px; */
+    padding: 0 10px;
     border-radius: 5px;
     background-color: white;
     margin-right: 8px;
@@ -312,18 +326,18 @@ select {
 .category a{
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 12px 16px;
     border-bottom: 1px solid var(--border);
 }
 
 .news {
     flex: 1;
-    height: 490px;
+    /* height: 490px; */
 
 }
 
 .slider {
-    margin-left: 6px;
+    /* margin-left: 6px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     height: 325px;
     border-radius: 5px;
@@ -391,22 +405,22 @@ select {
 }
 
 .banner {
-    height: 160px;
+    /* height: 160px; */
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
 
-.banner a {
+/* .banner a {
     flex: 1 0;
     margin-left: 6px;
-}
+} */
 
 .subbanner {
     height: 100%;
-    width: 100%;
+    /* width: 33.333%; */
     border-radius: 5px;
-    padding: 32px;
+    padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
@@ -452,25 +466,15 @@ select {
     margin-top: 32px;
 }
 
-.products {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-}
-.products a {
-    width: 50%;
-    height: 373px;
+.product-item {
     background-color: #FFFFFF;
     border-radius: 5px;
-    margin-top: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .product-img {
-    width: 191px;
-    height: 191px;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 191px;
     padding-top: 24px;
 }
 
@@ -543,9 +547,6 @@ select {
     opacity: .5;
 }
 
-.rate {
-}
-
 .rate img{
     width: 12px;
 }
@@ -558,19 +559,14 @@ select {
     margin-bottom: 16px;
 }
 
-.product-center {
-    flex: 1 0;
-}
 
-.product-center a {
-    display: flex;
-    flex-direction: column;
+
+.product-center-item {
     padding: 24px 0px;
-    margin: 3px 6px 0 6px;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    height: 752px;
+    height: 100%;
 }
 
 .center-img {
@@ -638,19 +634,15 @@ hr.up {
 }
 
 .about{
-    width: 80%;
+    max-width: 1410px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding:64px 0;
-}
-
-.letter-input {
-
+    padding: 64px 30px;
 }
 
 .letter-input input {
-    width: 300px;
+    width: 200px;
     height: 50px;
     padding-left: 24px;
     border: none;
@@ -660,7 +652,7 @@ hr.up {
 
 .letter-input button {
     height: 50px;
-    width: 140px;
+    width: 120px;
     border: none;
     color: white;
     background-color: var(--button);
@@ -681,9 +673,10 @@ hr.line {
 
 .copyright {
     display: flex;
-    width: 80%;
+    max-width: 1410px;
     margin: 32px auto;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .payment {
