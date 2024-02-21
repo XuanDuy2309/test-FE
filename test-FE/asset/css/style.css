@@ -324,8 +324,12 @@ select {
 .category a{
     display: flex;
     justify-content: space-between;
-    padding: 12px 16px;
+    padding: 13px 16px;
     border-bottom: 1px solid var(--border);
+}
+
+.category a:last-child {
+    border: none;
 }
 
 .category a:hover{
