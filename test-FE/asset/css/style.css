@@ -314,12 +314,10 @@ select {
 .category {
     /* width: 270px;
     height: 490px; */
-    padding: 0 10px;
+    padding: 0 16px;
     border-radius: 5px;
     background-color: white;
     margin-right: 8px;
-    padding: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -330,6 +328,11 @@ select {
     border-bottom: 1px solid var(--border);
 }
 
+.category a:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
 .news {
     flex: 1;
     /* height: 490px; */
@@ -338,7 +341,6 @@ select {
 
 .slider {
     /* margin-left: 6px; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     height: 325px;
     border-radius: 5px;
     background: url("/asset/images/slider.jpg") top center / cover no-repeat;
@@ -404,6 +406,11 @@ select {
     margin-top: 32px;
 }
 
+.slider-title button:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
 .banner {
     /* height: 160px; */
     margin-top: 5px;
@@ -421,8 +428,12 @@ select {
     /* width: 33.333%; */
     border-radius: 5px;
     padding: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
+}
+
+.subbanner:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .subban-content {
@@ -474,6 +485,11 @@ select {
 .product-item {
     background-color: #FFFFFF;
     border-radius: 5px;
+
+}
+
+.product-item:hover{
+    cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -577,10 +593,15 @@ select {
 .product-center-item {
     padding: 24px 0px;
     background-color: #FFFFFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
     border-radius: 5px;
     height: 98%;
     border: 1px solid var(--text--link);
+}
+
+.product-center-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .center-img {
@@ -679,6 +700,11 @@ hr.up {
     letter-spacing: 0em;
     text-align: center;
 
+}
+
+.letter-input button:hover {
+    opacity: .5;
+    cursor: pointer;
 }
 
 hr.line {

@@ -59,6 +59,11 @@
     .sm-gutter {
         margin: 0;
     }
+
+    .product-item {
+        margin-bottom: 16px;
+    }
+
     .product-img {
         height: 350px;
     }
